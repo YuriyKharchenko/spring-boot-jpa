@@ -1,0 +1,93 @@
+body {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    background-color: #eee;
+    background-image: url('../images/grey.jpg');
+    /*background-image: url(https://chrisaam.files.wordpress.com/2015/03/wallpaper-2846361.jpg);*/
+    /*width: 50px; !* ширина *!*/
+    /*height: 50px; !* высота *!*/
+    background-size: 100%;
+}
+
+.back-picture{
+    padding-top: 40px;
+    padding-bottom: 40px;
+    /*width: 50px; !* ширина *!*/
+    /*height: 50px; !* высота *!*/
+
+    background-size: 100%;
+}
+
+.title {
+    font-family: Papyrus, fantasy;
+    font-size: 40px;
+    color: #ec971f;
+    position: fixed; /* Фиксированное положение */
+    left: 46%; top: 0; /* Левый нижний угол */
+    padding: 10px; /* Поля вокруг текста */
+    /*background: darkslategray; !* Цвет фона *!*/
+    color: darkslategrey; /* Цвет текста */
+    width: 400%; /* Ширина слоя */
+}
+.footer{
+    position: fixed; /* Фиксированное положение */
+    left: 0; bottom: 0; /* Левый нижний угол */
+    padding: 10px; /* Поля вокруг текста */
+    background: darkslategray; /* Цвет фона */
+    color: #fff; /* Цвет текста */
+    width: 100%; /* Ширина слоя */
+}
+.header{
+    position: fixed; /* Фиксированное положение */
+    left: 85%; top: 0; /* Левый нижний угол */
+    padding: 5px; /* Поля вокруг текста */
+    /*background: ; !* Цвет фона *!*/
+    color: #761c19; /* Цвет текста */
+    width: 100%; /* Ширина слоя */
+}
+.find{
+    width: 20%;
+}
+
+.form-signin {
+    max-width: 330px;
+    padding: 15px;
+    margin: 0 auto;
+}
+
+.form-signin .form-signin-heading,
+.form-signin .checkbox {
+    margin-bottom: 10px;
+}
+
+.form-signin .checkbox {
+    font-weight: normal;
+}
+
+.form-signin .form-control {
+    position: relative;
+    height: auto;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 10px;
+    font-size: 16px;
+}
+
+.form-signin .form-control:focus {
+    z-index: 2;
+}
+
+.form-signin input {
+    margin-top: 10px;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+.form-signin button {
+    margin-top: 10px;
+}
+
+.has-error {
+    color: red
+}
