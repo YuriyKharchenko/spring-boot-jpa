@@ -1,6 +1,13 @@
 package ua.home.springboot.sample.xml;
 
 import org.junit.Test;
+import org.junit.runner.RunWith;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.test.IntegrationTest;
+import org.springframework.boot.test.SpringApplicationConfiguration;
+import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
+import org.springframework.test.context.web.WebAppConfiguration;
+import ua.home.springboot.Application;
 import ua.home.springboot.sample.model.Contact;
 
 import java.io.File;
@@ -10,10 +17,13 @@ import java.util.List;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertTrue;
-
+@RunWith(SpringJUnit4ClassRunner.class)
+@SpringApplicationConfiguration(classes = Application.class)
+@WebAppConfiguration
+@IntegrationTest("server.port:0")
 public class XmlProcessorTest {
-
-    public XmlProcessor xmlProcessor = new XsdXmlProcessorImpl();
+    @Autowired
+    public XmlProcessor xmlProcessor;
     private static final File resultXMLXSD = new File("testXSD.xml");
 
     @Test

@@ -7,7 +7,6 @@ public class LoginConstraintValidator implements ConstraintValidator<Login, Stri
 
     @Override
     public void initialize(Login login) {
-        //To change body of implemented methods use File | Settings | File Templates.
     }
 
     @Override

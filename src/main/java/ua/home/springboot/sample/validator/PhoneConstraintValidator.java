@@ -7,7 +7,6 @@ public class PhoneConstraintValidator implements ConstraintValidator<Phone, Stri
 
     @Override
     public void initialize(Phone phone) {
-        //To change body of implemented methods use File | Settings | File Templates.
     }
 
     @Override

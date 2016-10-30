@@ -45,7 +45,6 @@
     </style>
 </head>
 
-<%--<jsp:include page="../fragments/header.jsp" />--%>
 
 <body>
 
@@ -76,7 +75,7 @@
         </div>
     </table>
 
-    <table table class="sort" align="center" border="0.2" style="align-items: center" class="table table-striped">
+    <table table class="sort" align="center" border="1" width="800" style="align-items: center" class="table table-striped">
         <thead style="color:white;background-color:#2e6da4">
         <tr>
             <td>Last Name</td>

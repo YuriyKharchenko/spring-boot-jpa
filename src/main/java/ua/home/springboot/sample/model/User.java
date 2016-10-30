@@ -1,7 +1,6 @@
 package ua.home.springboot.sample.model;
 
 
-
 import ua.home.springboot.sample.validator.Login;
 
 import javax.persistence.*;
@@ -17,6 +16,7 @@ public class User {
     private String passwordConfirm;
     private String fio;
     private Set<Role> roles;
+    private String userName;
 
     public User() {
     }
@@ -79,4 +79,6 @@ public class User {
     public void setRoles(Set<Role> roles) {
         this.roles = roles;
     }
+
+
 }

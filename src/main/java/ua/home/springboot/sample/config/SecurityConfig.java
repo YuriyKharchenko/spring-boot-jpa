@@ -1,4 +1,4 @@
-package ua.home.springboot.sample.baseSecurity;
+package ua.home.springboot.sample.config;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Configuration;

@@ -12,11 +12,12 @@ import java.io.File;
 import java.util.List;
 
 @Service
-public class XsdXmlProcessorImpl implements XmlProcessor{
+public class XmlProcessorImpl implements XmlProcessor{
 
 
- public XsdXmlProcessorImpl getXmlProcessorImpl(){
-    return new XsdXmlProcessorImpl();
+ public XmlProcessorImpl getXmlProcessorImpl(){
+
+    return new XmlProcessorImpl();
  }
 
 
@@ -45,5 +46,10 @@ public class XsdXmlProcessorImpl implements XmlProcessor{
             throw new RuntimeException(e);
         }
 
+    }
+    //for test
+    @Override
+    public boolean isValid(String input) {
+        return true;
     }
 }

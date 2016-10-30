@@ -5,28 +5,41 @@
 <%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
 
 <html>
+<head>
+    <link href="${contextPath}/resources/css/bootstrap.min.css" rel="stylesheet">
+    <link href="${contextPath}/resources/css/common.css" rel="stylesheet">
+</head>
 
+<body>
 
+<jsp:include page="../fragments/header.jsp"/>
 
 <div align="center" style="width: 100%; margin-left: 1px">
 
 
-    <h2 style="text-align: center; color: #23527c">Контакт</h2>
-    <br>
+    <h2 style="text-align: center; color: #23527c">Contact</h2>
 
-    <spring:url value="/find" var="indexActionUrl"/>
-    <form:form class="form-horizontal" method="get" action="${indexActionUrl}">
-        <div align="center" class="container">
-            <div class="row">
-                <div class="search">
-                    <input type="text" class="form-control input-sm" name="lastname" placeholder="Please type Last Name"/>
-                    <button type="submit" class="btnn btn-primary btn-sm">Find</button>
+    <table class="find">
+        <div style="text-align: left">
+            <spring:url value="/find" var="indexActionUrl"/>
+            <form:form class="form-horizontal" method="get" action="${indexActionUrl}">
+                <div class="container">
+                    <div class="row">
+                        <div class="search">
+                            <input type="text" class="form-control input-sm" name="lastname"
+                                   placeholder="Find contact by Last Name"/>
+                            <br>
+                            <button type="submit" class="btnn btn-primary btn-sm">Find</button>
+                        </div>
+                    </div>
                 </div>
-            </div>
-        </div>
-    </form:form>
 
-    <table table class="sort" align="center" border="0.2" style="align-items: center" class="table table-striped">
+            </form:form>
+        </div>
+    </table>
+
+
+    <table class="sort" align="center" border="1" width="800" class="table table-striped">
         <thead style="color:white;background-color:#2e6da4">
         <tr>
             <td>Last Name</td>
@@ -63,8 +76,16 @@
     </table>
 </div>
 <br/>
+<div align="center">
+        <a href="/contacts" button type="submit" class="btn-lg btn-primary">My contacts</a>
+</div>
+
+<div class="footer">
+    <jsp:include page="../fragments/footer.jsp"/>
+</div>
+
 
 </body>
-<p><a href="/">Go home</a></p>
+
 
 </html>

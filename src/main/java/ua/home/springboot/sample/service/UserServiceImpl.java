@@ -30,4 +30,22 @@ public class UserServiceImpl implements UserService {
     public User findByUsername(String username) {
         return userRepository.findByUsername(username);
     }
+
+    // for test
+
+    @Override
+    public void methodOne() {
+        System.out.println("--Method One--");
+    }
+
+    @Override
+    public void methodTwo(String msg) {
+        System.out.println("Message:" + msg);
+    }
+
+    @Override
+    public void methodThree(User user) {
+        System.out.println("User Name:" + user.getUsername());
+    }
+
 }
